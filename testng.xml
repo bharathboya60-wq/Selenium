@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="methods" thread-count="5">
+<listeners>
+	<listener class-name="test.Listeners" />
+</listeners>
+<parameter name="URL" value="https://rahulshettyacademy.com/brokenlink"/>
+<parameter name="NameOfPerson" value="ThalaivaTheKing"/>
+  <test name="Loan">
+  <packages>
+       <package name="test.*">
+	       </package>     
+    </packages>
+  </test>
+</suite> 
