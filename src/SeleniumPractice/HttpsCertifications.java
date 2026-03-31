@@ -29,8 +29,14 @@ public class HttpsCertifications {
 		
 		driver.manage().deleteCookieNamed("SessionKey");
 		
-		File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshot, new File("Screenshot.png"));
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		
+		
+		File screenshot = ts.getScreenshotAs(OutputType.FILE);
+		
+		System.out.println("ScreenSHos");
+			FileUtils.copyFile(screenshot, new File("Screenshots.png"));
+		System.out.println("ScreenSHot Captured");
 //		FileUtils.
 		
 		
